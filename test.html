@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h5 id="myH5">Old heading</h5>
+<p id="myP">Old paragraph.</p>
+
+<button onclick="changeContent()">Click me</button>
+
+<script>
+function changeContent() {
+  var h5Element = document.getElementById("myH5");
+  var pElement = document.getElementById("myP");
+  h5Element.innerHTML = "New heading";
+  pElement.innerHTML = "New paragraph";
+}
+</script>
+
+</body>
+</html>
