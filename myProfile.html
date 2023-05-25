@@ -7,9 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/baa4364b36.js" crossorigin="anonymous"></script>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -17,16 +14,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
-
-
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
-<!--script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.min.js"></script--> -->
     <title>Quora4Collage</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="myProfile.css">
     <script src="/script.js"></script>
     <style type="text/css">
         .autohide {
@@ -181,52 +172,70 @@
         </div>
     </nav>
 
-<!-- login section starts   -->
+<!-- profile section starts  -->
+    <div class="container">
+        <div class="container mt-5 mb-5">
+            <div class="row no-gutters">
+                <div class="col-md-4 col-lg-4 pe-0"><img id="devProfileImg" src="dev.jpg"></div>
+                <div class="col-md-8 col-lg-8 ps-0">
+                    <div class="d-flex flex-column">
+                        <div class="d-flex flex-column  justify-content-between align-items-center p-5 bg-success text-white">
+                            <h3 class="display-5">Sachchidanand Dubey</h3><div><i class="fa fa-facebook me-3"></i><i class="fa fa-google me-3"></i><i class="fa fa-youtube-play me-3"></i><i class="fa fa-github me-3"></i><i class="fa fa-linkedin me-3"></i></div></div>
+                        <div class="p-3 bg-black text-white">
+                            <h6>Web designer &amp; Developer</h6>
+                        </div>
+                        <div class="d-flex flex-row text-white">
+                            <div class="p-4 bg-primary text-center skill-block">
+                                <h4>18</h4>
+                                <h6>Questions</h6>
+                            </div>
+                            <div class="p-3 bg-success text-center skill-block">
+                                <h4>87</h4>
+                                <h6>Answers</h6>
+                            </div>
+                            <div class="p-3 bg-warning text-center skill-block">
+                                <h4>700</h4>
+                                <h6>up votes</h6>
+                            </div>
+                            <div class="p-3 bg-danger text-center skill-block">
+                                <h4>1.3k</h4>
+                                <h6>views</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- top profile info ends -->
 
-
-
-
-<div>
-  <ul class="nav nav-tabs">
+        <!-- Tabs navs -->
+<ul class="nav nav-tabs mb-3" id="ex-with-icons" role="tablist">
     <li class="nav-item" role="presentation">
-      <a class="nav-link active bg-success" id="tab-login" data-mdb-toggle="pill" href="#pills-login" role="tab"
-        aria-controls="pills-login" aria-selected="true">Login</a>
+      <a class="nav-link active bg-success" id="questionTab" data-mdb-toggle="tab" href="#questionTab" role="tab"
+        aria-controls="ex-with-icons-tabs-1" aria-selected="true"><i class="fa-solid fa-hat-cowboy me-2"></i>Questions</a>
     </li>
     <li class="nav-item" role="presentation">
-      <a class="nav-link" id="tab-register" data-mdb-toggle="pill" href="#pills-register"  data-toggle="tab" role="tab"
-        aria-controls="pills-register" aria-selected="false" style="color: #198754;">Register</a>
+      <a class="nav-link" id="answerTab" data-mdb-toggle="tab" href="#answerTab" role="tab"
+        aria-controls="ex-with-icons-tabs-2" aria-selected="false"><i class="fa-solid fa-pen-to-square"></i>Answers</a>
     </li>
-    <li class="settingshead"><a href="#third" data-toggle="tab">3</a></li>
-    <li class="settingshead"><a href="#fourth" data-toggle="tab">4</a></li>
+ 
   </ul>
-</div>
-<div class="tab-content">
-  <div class="tab-pane active" id="first">
-      <div class="namedesig">
-        <h4>Dr. Jane Doe</h4>
-        <p>PhD in Applied Physics</p>
+  <!-- Tabs navs -->
+  
+  <!-- Tabs content -->
+  <div class="tab-content" id="questionTab">
+    <div class="tab-pane fade show active" id="ex-with-icons-tabs-1" role="tabpanel" aria-labelledby="ex-with-icons-tab-1">
+      Tab 1 content
+    </div>
+    <div class="tab-pane fade" id="ex-with-icons-tabs-2" role="tabpanel" aria-labelledby="answerTab">
+      Tab 2 content
+    </div>
+    <div class="tab-pane fade" id="ex-with-icons-tabs-3" role="tabpanel" aria-labelledby="ex-with-icons-tab-3">
+      Tab 3 content
     </div>
   </div>
-  <div class="tab-pane" id="second">
-    <div class="namedesig">
-      <h4>Dr. Martin</h4>
-      <p>PhD in Applied Chemistry</p>
-    </div>
-  </div>
-  <div class="tab-pane" id="third">
-    <div class="namedesig">
-      <h4>Dr. John</h4>
-      <p>PhD in Applied Biology</p>
-    </div>
-  </div>
-  <div class="tab-pane" id="fourth">
-    <div class="namedesig">
-      <h4>Dr. Watson</h4>
-      <p>PhD in Applied Math</p>
-    </div>
-  </div>
-</div>
-<!-- login section ends -->
+  <!-- Tabs content -->
+     </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
