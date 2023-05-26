@@ -10,9 +10,10 @@
   }
 
 
-  /* card */
-  
-
-  /* login page  */
+/* selection color */
+::selection {
+  color: rgb(255, 255, 255);
+  background: rgb(30, 109, 70);
+}
 
   
