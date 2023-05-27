@@ -79,89 +79,123 @@
 
 
 
-    <nav class="autohide navbar navbar-expand-lg navbar-dark bg-success">
-
-        <div class="container-fluid">
-            <a class="navbar-brand d-flex flex-row " href="index.html">
-                <img src="/querio.png" alt="Logo" width="50" height="50"
-                    class="d-inline-block align-text-middle fs-1 mt-2">
-                <div class="logotext mt-0">
-                    <h3 class="mt-1 ms-2 mb-0 ">Quora</h3>
-                    <h6 class="mt-0 ms-2" style="font-style: italic">for collage</h6>
-                </div>
-
-            </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-
-
-                <ul class="  navbar-nav ms-0 mb-5 mb-lg-0   ">
-
-                    <li class="nav-item me-3 me-lg-0 " style="padding-right: 1.5vw;">
-                        <a class="nav-link mx-1 text-white"  href="index.html">
-                            <h4><i class="fa-solid fa-house"></i></h4> </i>
-                        </a>
-                    </li>
-
-                    <li class="nav-item me-3 me-lg-0 " style="padding-right: 1.5vw;">
-                        <a class="nav-link mx-1 text-white" href="resources.html">
-                            <h4><i class="fa-solid fa-book"></h4></i>
-                        </a>
-                    </li>
-
-                    <li class="nav-item me-3 me-lg-0 " style="padding-right: 1.5vw;">
-                        <a class="nav-link mx-1 text-white" href="questionList.html">
-                            <h4><i class="fa-solid fa-pen-to-square"></h4></i>
-                        </a>
-                    </li>
-
-                    <li class="nav-item me-3 me-lg-0 " style="padding-right: 1.5vw;">
-                        <a class="nav-link mx-1 text-white" href="groups.html">
-                            <h4><i class="fa-solid fa-user-group"></h4></i>
-                        </a>
-                    </li>
-
-                    <li class="nav-item me-3 me-lg-0 " style="padding-right: 1.5vw;">
-                        <a class="nav-link mx-1 text-white" href="notifications.html">
-                            <h4><i class="fa-solid fa-bell"></h4></i>
-                        </a>
-                    </li>
-
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-
-                    <button type="button" class="btn btn-outline-light">Go</button>
-                </form>
-
-
-                <!-- Profile drop down button button -->
-                <div class="btn-group end ms-2">
-                    <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        <img src="dev.jpg" width="40" height="40" class="rounded-circle">
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="myProfile.html">My Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Setting</a></li>
-                        <li><a class="dropdown-item" href="#">Privecy and Safety</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Sign Out</a></li>
-                    </ul>
-                </div>
-
-
-
-            </div>
-        </div>
-    </nav>
+    <!-- navigation bar starts --> 
+     <nav class="autohide navbar navbar-expand-lg navbar-dark bg-success"> 
+  
+         <div class="container-fluid"> 
+             <a class="navbar-brand d-flex flex-row " href="index.html"> 
+                 <img src="/querio.png" alt="Logo" width="50" height="50" 
+                     class="d-inline-block align-text-middle fs-1 mt-2"> 
+                 <div class="logotext mt-0"> 
+                     <h3 class="mt-1 ms-2 mb-0 ">Quora</h3> 
+                     <h6 class="mt-0 ms-2" style="font-style: italic">for collage</h6> 
+                 </div> 
+  
+             </a> 
+ <!-- mobile top navigation pofile icon start --> 
+ <div class="btn-group end ms-2 d-lg-none"> 
+     <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" 
+         aria-expanded="false"> 
+         <img src="dev.jpg" width="40" height="40" class="rounded-circle"> 
+     </button> 
+     <ul class="dropdown-menu dropdown-menu-end"> 
+         <li><a class="dropdown-item" href="myProfile.html">My Profile</a></li> 
+         <li><a class="dropdown-item" href="#">Setting</a></li> 
+         <li><a class="dropdown-item" href="#">Privecy and Safety</a></li> 
+         <li> 
+             <hr class="dropdown-divider"> 
+         </li> 
+         <li><a class="dropdown-item" href="#">Sign Out</a></li> 
+     </ul> 
+ </div> 
+ <!-- mobile top navigation pofile icon ends --> 
+             <button id="togglerButton " class="navbar-toggler d-none " type="button" data-bs-toggle="collapse" 
+                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" 
+                 aria-label="Toggle navigation"> 
+                 <span class="navbar-toggler-icon"></span> 
+             </button> 
+             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent"> 
+  
+  
+                 <ul class="  navbar-nav ms-0 mb-5 mb-lg-0   "> 
+  
+                     <li class="nav-item me-3 me-lg-0 " style="padding-right: 1.5vw;"> 
+                         <a class="nav-link mx-1 text-white"  href="index.html"> 
+                             <h4><i class="fa-solid fa-house"></i></h4> </i> 
+                         </a> 
+                     </li> 
+  
+                     <li class="nav-item me-3 me-lg-0 " style="padding-right: 1.5vw;"> 
+                         <a class="nav-link mx-1 text-white" href="resources.html"> 
+                             <h4><i class="fa-solid fa-book"></h4></i> 
+                         </a> 
+                     </li> 
+  
+                     <li class="nav-item me-3 me-lg-0 " style="padding-right: 1.5vw;"> 
+                         <a class="nav-link mx-1 text-white" href="questionList.html"> 
+                             <h4><i class="fa-solid fa-pen-to-square"></h4></i> 
+                         </a> 
+                     </li> 
+  
+                     <li class="nav-item me-3 me-lg-0 " style="padding-right: 1.5vw;"> 
+                         <a class="nav-link mx-1 text-white" href="groups.html"> 
+                             <h4><i class="fa-solid fa-user-group"></h4></i> 
+                         </a> 
+                     </li> 
+  
+                     <li class="nav-item me-3 me-lg-0 " style="padding-right: 1.5vw;"> 
+                         <a class="nav-link mx-1 text-white" href="notifications.html"> 
+                             <h4><i class="fa-solid fa-bell"></h4></i> 
+                         </a> 
+                     </li> 
+  
+                 </ul> 
+                 <form class="d-flex" role="search"> 
+                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> 
+  
+                     <button type="button" class="btn btn-outline-light">Go</button> 
+                 </form> 
+  
+  
+                 <!-- Profile drop down button button --> 
+                 <div class="btn-group end ms-2"> 
+                     <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" 
+                         aria-expanded="false"> 
+                         <img src="dev.jpg" width="40" height="40" class="rounded-circle"> 
+                     </button> 
+                     <ul class="dropdown-menu dropdown-menu-end"> 
+                         <li><a class="dropdown-item" href="myProfile.html">My Profile</a></li> 
+                         <li><a class="dropdown-item" href="#">Setting</a></li> 
+                         <li><a class="dropdown-item" href="#">Privecy and Safety</a></li> 
+                         <li> 
+                             <hr class="dropdown-divider"> 
+                         </li> 
+                         <li><a class="dropdown-item" href="login.html">Sign Out</a></li> 
+                     </ul> 
+                 </div> 
+  
+  
+  
+             </div> 
+         </div> 
+     </nav> 
+  
+     <!-- mobile bottom navigation starts --> 
+  
+  
+     <div class="row bg-success fixed-bottom d-lg-none "> 
+         <div class="col"><a class="nav-link d-flex justify-content-center" href="index.html"><i class="fa-solid fa-house" 
+               style="color:white"></i></a></div> 
+         <div class="col"> <a class="nav-link d-flex justify-content-center" href="resources.html"><i class="fa-solid fa-book" 
+               style="color:white"></i></a></div> 
+         <div class="col"> <a class="nav-link d-flex justify-content-center" href="questionList.html"><i class="fa-solid fa-pen-to-square" 
+               style="color:white"></i></a></div> 
+         <div class="col"><a class="nav-link d-flex justify-content-center" href="groups.html"><i class="fa-solid fa-user-group" 
+               style="color:white"></i></a></div> 
+       </div> 
+     <!-- mobile bottom navigation ends --> 
+  
+ <!-- navigation bar ends -->
 
 
     <div class="container">
