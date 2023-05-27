@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/baa4364b36.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Quora4Collage</title>
+
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <style type="text/css">
+        .autohide {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1030;
+        }
+
+        .scrolled-down {
+            transform: translateY(-100%);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .scrolled-up {
+            transform: translateY(0);
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+
+            el_autohide = document.querySelector('.autohide');
+
+            // add padding-top to bady (if necessary)
+            navbar_height = document.querySelector('.navbar').offsetHeight;
+            document.body.style.paddingTop = navbar_height + 'px';
+
+            if (el_autohide) {
+
+                var last_scroll_top = 0;
+                window.addEventListener('scroll', function () {
+                    let scroll_top = window.scrollY;
+                    if (scroll_top < last_scroll_top) {
+                        el_autohide.classList.remove('scrolled-down');
+                        el_autohide.classList.add('scrolled-up');
+                    }
+                    else {
+                        el_autohide.classList.remove('scrolled-up');
+                        el_autohide.classList.add('scrolled-down');
+                    }
+                    last_scroll_top = scroll_top;
+
+                });
+                // window.addEventListener
+
+            }
+            // if
+
+        });
+	// DOMContentLoaded  end
+
+
+    </script>
+
+
+
+
+</head>
+
+<body>
+
+
+    <!-- navigation bar starts -->
+    <nav class="autohide navbar navbar-expand-lg navbar-dark bg-success">
+
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex flex-row " href="index.html">
+                <img src="/querio.png" alt="Logo" width="50" height="50"
+                    class="d-inline-block align-text-middle fs-1 mt-2">
+                <div class="logotext mt-0">
+                    <h3 class="mt-1 ms-2 mb-0 ">Quora</h3>
+                    <h6 class="mt-0 ms-2" style="font-style: italic">for collage</h6>
+                </div>
+
+            </a>
+            <!-- mobile top navigation pofile icon start -->
+            <div class="btn-group end ms-2 d-lg-none">
+                <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="dev.jpg" width="40" height="40" class="rounded-circle">
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="myProfile.html">My Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Setting</a></li>
+                    <li><a class="dropdown-item" href="#">Privecy and Safety</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                </ul>
+            </div>
+            <!-- mobile top navigation pofile icon ends -->
+            <button id="togglerButton " class="navbar-toggler d-none " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+
+                <ul class="  navbar-nav ms-0 mb-5 mb-lg-0   ">
+
+                    <li class="nav-item me-3 me-lg-0 " style="padding-right: 1.5vw;">
+                        <a class="nav-link mx-1 text-white" href="index.html">
+                            <h4><i class="fa-solid fa-house"></i></h4> </i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item me-3 me-lg-0 " style="padding-right: 1.5vw;">
+                        <a class="nav-link mx-1 text-white" href="resources.html">
+                            <h4><i class="fa-solid fa-book"></h4></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item me-3 me-lg-0 " style="padding-right: 1.5vw;">
+                        <a class="nav-link mx-1 text-white" href="questionList.html">
+                            <h4><i class="fa-solid fa-pen-to-square"></h4></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item me-3 me-lg-0 " style="padding-right: 1.5vw;">
+                        <a class="nav-link mx-1 text-white" href="groups.html">
+                            <h4><i class="fa-solid fa-user-group"></h4></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item me-3 me-lg-0 " style="padding-right: 1.5vw;">
+                        <a class="nav-link mx-1 text-white" href="notifications.html">
+                            <h4><i class="fa-solid fa-bell"></h4></i>
+                        </a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+
+                    <button type="button" class="btn btn-outline-light">Go</button>
+                </form>
+
+
+                <!-- Profile drop down button button -->
+                <div class="btn-group end ms-2">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="dev.jpg" width="40" height="40" class="rounded-circle">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="myProfile.html">My Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Setting</a></li>
+                        <li><a class="dropdown-item" href="#">Privecy and Safety</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- mobile bottom navigation starts -->
+
+
+    <div class="row bg-success fixed-bottom d-lg-none ">
+        <div class="col"><a class="nav-link d-flex justify-content-center" href="index.html"><i
+                    class="fa-solid fa-house" style="color:white"></i></a></div>
+        <div class="col"> <a class="nav-link d-flex justify-content-center" href="resources.html"><i
+                    class="fa-solid fa-book" style="color:white"></i></a></div>
+        <div class="col"> <a class="nav-link d-flex justify-content-center" href="questionList.html"><i
+                    class="fa-solid fa-pen-to-square" style="color:white"></i></a></div>
+        <div class="col"><a class="nav-link d-flex justify-content-center" href="groups.html"><i
+                    class="fa-solid fa-user-group" style="color:white"></i></a></div>
+    </div>
+    <!-- mobile bottom navigation ends -->
+
+    <!-- navigation bar ends -->
+
+    <div class="container">
+        <div class="row row-fluid">
+
+            <!-- Left sidebar Starts -->
+
+            <div class="col-2   border rounded mt-3 	d-none d-lg-block  " style="background-color: #f0f1f1 ;">
+                <img src="dev.jpg" width="70vw" height="70vw" class=" rounded-circle mx-auto d-block mt-3" alt="...">
+                <div class="devInfo">
+
+                    <h5 class="mt-1 ms-2 mx-auto" style="font-size: 1vw;">Sachchidanand Dubey <span></span> <i
+                            class="fa-sharp fa-solid fa-circle-check" style="color: #198754;"></i></i></h5>
+                </div>
+
+
+
+                <ul class="list-group  mt-3">
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold"><i class="fa-solid fa-house me-2"></i>Home</div>
+
+                        </div>
+
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+
+                            <div class="fw-bold"><i class="fa-solid fa-hat-cowboy me-2"></i>Questions
+
+                            </div>
+
+                            <ul>
+                                <li>New</li>
+                                <li>Trending</li>
+                                <li></i>For You</li>
+                            </ul>
+                        </div>
+
+
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold"><i class="fa-solid fa-square-poll-horizontal me-2"></i>Polls</div>
+
+                        </div>
+
+                    </li>
+
+
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start mt-3">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold"><i class="fa-solid fa-square-poll-horizontal me-2"></i>Groups</div>
+                            <ul style="list-style-type:symbols(fa-arrow-right)">
+                                <li>New</li>
+                                <li>Trending</li>
+                                <li>For You</li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold"><i class="fa-solid fa-square-poll-horizontal me-2"></i>Tags</div>
+
+                        </div>
+
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold"><i class="fa-solid fa-square-poll-horizontal me-2"></i>Badges</div>
+
+                        </div>
+
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold"><i class="fa-solid fa-square-poll-horizontal me-2"></i>Help</div>
+
+                        </div>
+
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- Left side bar ends -->
+
+            <!-- Middle Scrolable column -->
+
+            <div id="my-element" class="col-7">
+                <ul class="list-group mt-3">
+                    <li class="list-group-item fw-bold"> <i class="fa-solid fa-book me-2"
+                            style="color: #198754;"></i>Resources for you</li>
+                    <!-- Resource List Starts -->
+                    <div class="row mt-3 ">
+                        
+                            <div class="col"style="text-align: center;"> <h1 ><i class="fa-solid fa-book-atlas " style="color: #1f761e;"></i> </h1> <span class="">Books</span></div>
+                      
+                            <div class="col" style="text-align: center;"><h1><i class="fa-brands fa-chrome" style="color: #257e34;"></i></h1><span class="">websites</span></div>
+                     
+                            <div class="col" style="text-align: center;"><h1><i class="fa-solid fa-briefcase" style="color: #226d39;"></i></h1><span class="">Internships</span></div>
+                 
+                            <div class="col" style="text-align: center;"><h1><i class="fa-solid fa-user-tie" style="color: #1a612f;"></i></h1><span class="">Jobs</span></div>
+
+                            <div class="col" style="text-align: center;"><h1><i class="fa-solid fa-download" style="color: #1e5c2e;"></i></h1><span class="">Downloads</span></div>
+                       
+
+                        
+                    </div>
+
+                </ul>
+            </div>
+            <!-- Right sidebar Starts -->
+            <div class="col-3 mt-3 d-none d-lg-block " style="background-color: #f0f1f1 ">
+                <!-- Top Grid -->
+
+                <div class="container text-center mt-3 ">
+                    <div class="row row-cols-2 bg-light border border-success">
+                        <div class="col d-flex flex-column justify-content-center border border-success ">
+                            <h6 class="mb-0 mt-2">18</h6>
+                            <p class="mb-1">Questions</p>
+                        </div>
+                        <div class="col d-flex flex-column justify-content-center border border-success ">
+                            <h6 class="mb-0 mt-2">87</h6>
+                            <p class="mb-1">Answers</p>
+                        </div>
+                        <div class="col d-flex flex-column justify-content-center border border-success">
+                            <h6 class="mb-0 mt-2">700</h6>
+                            <p class="mb-1">up votes</p>
+                        </div>
+                        <div class="col d-flex flex-column justify-content-center border border-success">
+                            <h6 class="mb-0 mt-2 primary">1.3k</h6>
+                            <p class="mb-1">views</p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- resources -->
+                <div class="resources mt-3">
+                    <h4><i class="fa-solid fa-flask me-2 " style="color: #198754;"></i><span>For You</span></h4>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="card mt-2">
+                                <img src="time_table.webp" class="card-img-top " alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">AKTU Date Sheet 2023 Odd/Even Semester PDF UPTU BTech BArch
+                                        Exam Date @ aktu.ac.in.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <h6><i class="fa-solid fa-file-pdf me-2 " style="color: rgb(148, 12, 12);"></i>Download
+                                Thomas calculs
+                        </li>
+                        </h6>
+                        <li class="list-group-item">
+                            <h6><i class="fa-solid fa-file-pdf me-2 " style="color: rgb(148, 12, 12);"></i>Download
+                                Quntum Series of all branches.
+                        </li>
+                        </h6>
+                        <li class="list-group-item">
+                            <h6><i class="fa-solid fa-briefcase me-2" style="color: #9b0d0d;"></i></i>Job openings
+                                for
+                                freshers
+                        </li>
+                        </h6>
+                        <li class="list-group-item">
+                            <h6><i class="fa-solid fa-file-pdf me-2 " style="color: rgb(148, 12, 12);"></i>Web
+                                Technology : A Computer Science Perspective by Jeffrey Jackson.<span
+                                    class="badge badge-sm text-bg-warning">new</span>
+                        </li>
+                        </h6>
+                        <li class="list-group-item">
+                            <h6><i class="fa-solid fa-briefcase me-2" style="color: #9b0d0d;"></i> </i>Summer Internship
+                                For CS/IT Students.
+                        </li>
+                        </h6>
+                        <li class="list-group-item">
+                            <h6><i class="fa-solid fa-file-pdf me-2 " style="color: rgb(148, 12, 12);"></i>Download
+                                Thomas calculs
+                        </li>
+                        </h6>
+
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

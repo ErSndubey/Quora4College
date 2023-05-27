@@ -11,8 +11,10 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Quora4Collage</title>
 
+    
+
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+ <script src="script.js"></script>
     <style type="text/css">
         .autohide {
             position: fixed;
@@ -78,7 +80,7 @@
 <body>
 
 
-
+<!-- navigation bar starts -->
     <nav class="autohide navbar navbar-expand-lg navbar-dark bg-success">
 
         <div class="container-fluid">
@@ -91,8 +93,24 @@
                 </div>
 
             </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+<!-- mobile top navigation pofile icon start -->
+<div class="btn-group end ms-2 d-lg-none">
+    <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        <img src="dev.jpg" width="40" height="40" class="rounded-circle">
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item" href="myProfile.html">My Profile</a></li>
+        <li><a class="dropdown-item" href="#">Setting</a></li>
+        <li><a class="dropdown-item" href="#">Privecy and Safety</a></li>
+        <li>
+            <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">Sign Out</a></li>
+    </ul>
+</div>
+<!-- mobile top navigation pofile icon ends -->
+            <button id="togglerButton " class="navbar-toggler d-none " type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -153,7 +171,7 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                        <li><a class="dropdown-item" href="login.html">Sign Out</a></li>
                     </ul>
                 </div>
 
@@ -163,6 +181,22 @@
         </div>
     </nav>
 
+    <!-- mobile bottom navigation starts -->
+
+
+    <div class="row bg-success fixed-bottom d-lg-none ">
+        <div class="col"><a class="nav-link d-flex justify-content-center" href="index.html"><i class="fa-solid fa-house"
+              style="color:white"></i></a></div>
+        <div class="col"> <a class="nav-link d-flex justify-content-center" href="resources.html"><i class="fa-solid fa-book"
+              style="color:white"></i></a></div>
+        <div class="col"> <a class="nav-link d-flex justify-content-center" href="questionList.html"><i class="fa-solid fa-pen-to-square"
+              style="color:white"></i></a></div>
+        <div class="col"><a class="nav-link d-flex justify-content-center" href="groups.html"><i class="fa-solid fa-user-group"
+              style="color:white"></i></a></div>
+      </div>
+    <!-- mobile bottom navigation ends -->
+
+<!-- navigation bar ends -->
 
     <div class="container">
         <div class="row row-fluid">
@@ -254,9 +288,9 @@
             <!-- Middle Scrolable column -->
 
             <div id="my-element" class="col-7">
-                <button type="button" class="btn border border-1 btn-block w-100 form-control mt-3 text-center-start"
+                <button type="button" class="btn border border-1 btn-block w-100 form-control mt-3 text-right"
                     data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    What do you want to ask ?
+                      What do you want to ask ?
                 </button>
 
                 <!-- Modal -->
@@ -271,14 +305,14 @@
                             </div>
                             <div class="modal-body">
                                 <div class="form-group">
-                                    <label for="exampleFormControlTextarea2">Ask</label>
-                                    <textarea class="form-control rounded-0" id="exampleFormControlTextarea2"
+                                    <label for="FormControlTextarea2">Ask</label>
+                                    <textarea class="form-control rounded-1 border-success" id="FormControlTextarea2"
                                         rows="3"></textarea>
                                 </div>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Submit</button>
+                                <button type="button" class="btn btn-success">Submit</button>
                             </div>
                         </div>
                     </div>
@@ -292,6 +326,7 @@
                     <!-- Post card start -->
                     <div class="row">
                         <!-- left-post-col -->
+
                         <div class="voting">
                             <a href="">
                                 <img src="dev.jpg" width="45" height="45" class="rounded-circle mt-3 mb-4  ">
@@ -535,6 +570,7 @@
 
             </div>
         </div>
+        <script src="script.js"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
