@@ -16,4 +16,23 @@
   background: rgb(30, 109, 70);
 }
 
-  
+  /* mobile bottom navigation */
+  .bottom-navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+  }
+
+  .bottom-navbar .nav-link {
+    padding: 1rem;
+  }
+
+  /* Media query to style the navigation on mobile screens */
+  @media (max-width: 767.98px) {
+    .bottom-navbar .navbar-nav {
+      justify-content: center;
+    }
+  }
