@@ -1,13 +1,46 @@
 
 
-.voting {
-    width: 70px;
-    font-size: 2em;
-    color: #606060;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
+.vote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  width: 40px;
+}
+
+.vote-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* align-content: flex-start;
+  flex-wrap: wrap; */
+}
+
+.vote-button {
+  padding: 5px 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.vote-button:hover {
+  color:#2c7e3e
+}
+
+.vote-count {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.vote-count span {
+  font-size: 14px;
+  font-weight: normal;
+}
+
 
 
 /* selection color */
@@ -16,7 +49,7 @@
   background: rgb(30, 109, 70);
 }
 
-  /* mobile bottom navigation */
+  /* mobile bottom navigation start*/
   .bottom-navbar {
     position: fixed;
     bottom: 0;
@@ -36,3 +69,72 @@
       justify-content: center;
     }
   }
+
+  /* mobile bottom navigation ends */
+
+  /* share button starts */
+
+.social .fbtn  {
+    width: 30px;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    line-height:18px;
+    float: left;
+}
+.social .fa{padding:15px 0px}
+.facebook {
+    background-color: #3b5998;
+}
+ 
+.gplus {
+    background-color: #dd4b39;
+}
+ 
+.twitter {
+    background-color: #55acee;
+}
+ 
+.stumbleupon {
+    background-color: #eb4924;
+}
+ 
+.pinterest {
+    background-color: #cc2127;
+}
+ 
+.linkedin {
+    background-color: #0077b5;
+}
+ 
+.buffer {
+    background-color: #323b43;
+}
+
+/* .share-button.sharer {
+  height: 20px;
+  padding: 100px;
+} */
+.share-button.sharer .social.active.top {
+  transform: scale(1) translateY(-10px);
+}
+.share-button.sharer .social.active {
+  opacity: 1;
+  transition: all 0.4s ease 0s;
+  visibility: visible;
+}
+.share-button.sharer .social.networks-5 {
+
+}
+.share-button.sharer .social.top {
+  margin-top: -80px;
+  transform-origin: 0 0 0;
+}
+.share-button.sharer .social {
+  margin-left: -65px;
+  opacity: 0;
+  transition: all 0.4s ease 0s;
+  visibility: hidden;
+}
+
+  /* share button ends */

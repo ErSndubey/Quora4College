@@ -17,26 +17,36 @@ window.addEventListener('load', updateElementClass);
 
 
 
-  // Get the upvote and downvote buttons and vote count element
-  var upvoteButton = document.getElementById('upvote-button');
-  var downvoteButton = document.getElementById('downvote-button');
-  var voteCountElement = document.getElementById('vote-count');
 
-  // Get the initial vote count
-  var voteCount = parseInt(voteCountElement.textContent);
+let voteCount = 0;
 
-  // Add a click event listener to the upvote button
-  upvoteButton.addEventListener('click', function() {
-    // Increment the vote count
-    voteCount++;
-    // Update the vote count element
-    voteCountElement.textContent = voteCount;
+function voteUp() {
+  voteCount++;
+  updateVoteCount();
+}
+
+function voteDown() {
+  voteCount--;
+  updateVoteCount();
+}
+
+function updateVoteCount() {
+  document.getElementById("voteCount").innerText = voteCount;
+}
+
+
+
+  // share button starts
+
+  $( document ).ready(function() {
+    //custom button for homepage
+       $( ".share-btn" ).click(function(e) {
+          $('.networks-5').not($(this).next( ".networks-5" )).each(function(){
+             $(this).removeClass("active");
+         });
+       
+              $(this).next( ".networks-5" ).toggleClass( "active" );
+      });   
   });
 
-  // Add a click event listener to the downvote button
-  downvoteButton.addEventListener('click', function() {
-    // Decrement the vote count
-    voteCount--;
-    // Update the vote count element
-    voteCountElement.textContent = voteCount;
-  });
+  // share button ends
