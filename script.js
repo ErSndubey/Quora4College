@@ -17,26 +17,43 @@ window.addEventListener('load', updateElementClass);
 
 
 
-  // Get the upvote and downvote buttons and vote count element
-  var upvoteButton = document.getElementById('upvote-button');
-  var downvoteButton = document.getElementById('downvote-button');
-  var voteCountElement = document.getElementById('vote-count');
 
-  // Get the initial vote count
-  var voteCount = parseInt(voteCountElement.textContent);
+let voteCount = 0;
 
-  // Add a click event listener to the upvote button
-  upvoteButton.addEventListener('click', function() {
-    // Increment the vote count
-    voteCount++;
-    // Update the vote count element
-    voteCountElement.textContent = voteCount;
-  });
+function voteUp() {
+  voteCount++;
+  updateVoteCount();
+}
 
-  // Add a click event listener to the downvote button
-  downvoteButton.addEventListener('click', function() {
-    // Decrement the vote count
-    voteCount--;
-    // Update the vote count element
-    voteCountElement.textContent = voteCount;
-  });
+function voteDown() {
+  voteCount--;
+  updateVoteCount();
+}
+
+function updateVoteCount() {
+  document.getElementById("voteCount").innerText = voteCount;
+}
+
+
+
+  // share button starts
+
+
+  function openShareMenu() {
+    if (navigator.share) {
+      navigator.share({
+        title: 'Share Title',
+        text: 'Share Text',
+        url: 'https://quora4collage.vercel.app/'
+      })
+        .then(() => console.log('Share successful'))
+        .catch((error) => console.log('Share error:', error));
+    } else {
+      console.log('Web Share API not supported');
+      // Fallback behavior for platforms that do not support Web Share API
+      // You can open a custom share dialog or perform other actions here
+    }
+  }
+ 
+
+  // share button ends
