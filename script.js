@@ -38,15 +38,22 @@ function updateVoteCount() {
 
   // share button starts
 
-  $( document ).ready(function() {
-    //custom button for homepage
-       $( ".share-btn" ).click(function(e) {
-          $('.networks-5').not($(this).next( ".networks-5" )).each(function(){
-             $(this).removeClass("active");
-         });
-       
-              $(this).next( ".networks-5" ).toggleClass( "active" );
-      });   
-  });
+
+  function openShareMenu() {
+    if (navigator.share) {
+      navigator.share({
+        title: 'Share Title',
+        text: 'Share Text',
+        url: 'https://quora4collage.vercel.app/'
+      })
+        .then(() => console.log('Share successful'))
+        .catch((error) => console.log('Share error:', error));
+    } else {
+      console.log('Web Share API not supported');
+      // Fallback behavior for platforms that do not support Web Share API
+      // You can open a custom share dialog or perform other actions here
+    }
+  }
+ 
 
   // share button ends
