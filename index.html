@@ -328,12 +328,12 @@
                     </div>
                 </div>
 
-                <!-- Card Starts -->
+                <!-- Card section Starts -->
 
                 <div class="container mt-3 border rounded " style="background-color: #f0f1f1 ; ">
 
 
-                    <!-- Post card start -->
+                    <!--  card 1 start -->
                     <div class="row">
                         <!-- left-post-col -->
 
@@ -431,13 +431,7 @@
 
                             <!-- answer button starts -->
                             <style>
-                                .editor-container {
-                                    border: 1px solid #ced4da;
-                                    border-radius: 0.25rem;
-                                    padding: 10px;
-                                    height: 50vh;
-                                    /* Set the height to 50% of the viewport height */
-                                }
+
                             </style>
 
 
@@ -479,187 +473,11 @@
                             </script>
                             <!-- answe button ends -->
                         </div>
-
-
                     </div>
                     <hr>
-                    <div class="row">
-                        <!-- left-post-col -->
+                    <!-- card 1 ends -->
 
-                        <!-- voating buttons starts -->
-
-                        <div class="vote-container ">
-                            <a href="myProfile.html">
-                                <img src="shiva.png" width="45" height="45" class="rounded-circle mt-3 mb-4  ">
-                            </a>
-
-                            <button class="vote-button" onclick="voteUp()" title="Upvote">
-                                <h4 class="m-0"> <span class="fa fa-caret-up"></h4></span>
-                            </button>
-                            <span class="vote-count m-0" id="voteCount">0</span>
-                            <button class="vote-button " onclick="voteDown()" title="Downvote">
-                                <h4 class="m-0"><span class="fa fa-caret-down"></span></h4>
-                            </button>
-
-                        </div>
-                        <!-- voting buttons ends -->
-
-                        <!-- right post col -->
-                        <div class="col-xl-8 text-sm ms-4" style="width:calc(100% - 70px); text-align: justify; ">
-                            <h5 class="mt-3 ">Shiva Shau <i class="fa-sharp fa-solid fa-circle-check"
-                                    style="color: #198754;"></i></h5>
-                            <!-- question -->
-                            <h5 class=" text-sm mt-1">What is the difference between null and undefined in Java Script?
-                            </h5>
-                            <!-- Answer -->
-                            <p style="text-size-adjust:unset;">The difference can be explained with toilet tissue
-                                holder:
-
-                                A non-zero value is like a holder with roll of toilet tissue and there's tissue still on
-                                the tube.
-
-                                A zero value is like a holder with an empty toilet tissue tube.
-
-                                A null value is like a holder that doesn't even have a tissue tube.
-
-                                An undefined value is similar to the holder itself being missing.</p>
-                        </div>
-                        <!-- bottom buttons -->
-                        <div class=" gap-2 d-flex justify-content-end mb-2" style="background-color: #f0f1f1">
-
-
-                            <!-- comment button starts -->
-
-                            <div>
-                                <button type="button" class="btn btn-sm btn-outline-success" data-bs-toggle="modal"
-                                    data-bs-target="#staticBackdropcomment"><i class="fa-solid fa-message "></i><span
-                                        class="ms-2">comment</span>
-                                </button>
-
-                                <!-- Modal -->
-                                <div class="modal fade " id="staticBackdropcomment" data-bs-backdrop="static"
-                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
-                                    aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="staticBackdropLabel">Add a comment.</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="form-group">
-                                                    <label for="FormControlTextarea2">comment</label>
-                                                    <textarea class="form-control rounded-1 border-success"
-                                                        id="FormControlTextarea2" rows="3"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary"
-                                                    data-bs-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-success">Post</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- model ends -->
-                            </div>
-                            <!-- comment button ends -->
-
-
-                            <!-- share button start -->
-                            <div class="share-button sharer" style="display: block;">
-                                <button type="button" class="btn btn-sm btn-outline-success share-btn"><i
-                                        class="fa-solid fa-square-share-nodes me-1"></i>
-                                    <span>Share</span> </button>
-                                <div class="social top center networks-5 ">
-                                    <!-- Facebook Share Button -->
-                                    <a class="fbtn share facebook"
-                                        href="https://www.facebook.com/sharer/sharer.php?u=url"><i
-                                            class="fa fa-facebook"></i></a>
-                                    <!-- Google Plus Share Button -->
-                                    <a class="fbtn share gplus" href="https://plus.google.com/share?url=url"><i
-                                            class="fa fa-google-plus"></i></a>
-                                    <!-- Twitter Share Button -->
-                                    <a class="fbtn share twitter"
-                                        href="https://twitter.com/intent/tweet?text=title&amp;url=url&amp;via=creativedevs"><i
-                                            class="fa fa-twitter"></i></a>
-                                    <!-- Pinterest Share Button -->
-                                    <a class="fbtn share pinterest"
-                                        href="https://pinterest.com/pin/create/button/?url=url&amp;description=data&amp;media=image"><i
-                                            class="fa fa-pinterest"></i></a>
-
-                                    <!-- LinkedIn Share Button -->
-                                    <a class="fbtn share linkedin"
-                                        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=url&amp;title=title&amp;source=url/"><i
-                                            class="fa fa-linkedin"></i></a>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <!-- share button ends -->
-
-                            <!-- Each instance has a unique identifier for the modal and the editor container (e.g., editorModal2, editorModalLabel2, editor2). -->
-
-                            <!-- answer button starts -->
-                            <button type="button" class="btn btn-sm btn-outline-success" data-bs-toggle="modal"
-                                data-bs-target="#editorModal2">
-                                <i class="fa-solid fa-pen-to-square"></i>
-                                <span>Answer</span>
-                            </button>
-
-                            <div class="modal fade" id="editorModal2" tabindex="-1" aria-labelledby="editorModalLabel2"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-md modal-dialog-centered">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="editorModalLabel2">Editor</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <form>
-                                                <div id="editor2" class="editor-container h-50 "></div>
-                                            </form>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-success">Post</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <script>
-                                ClassicEditor
-                                    .create(document.querySelector('#editor1'))
-                                    .catch(error => {
-                                        console.error(error);
-                                    });
-
-                                ClassicEditor
-                                    .create(document.querySelector('#editor2'))
-                                    .catch(error => {
-                                        console.error(error);
-                                    });
-                            </script>
-                        </div>
-
-
-                    </div>
-                    <hr>
-
-
-
-                </div>
-                <!-- Post card ends -->
-                <!-- Card ends -->
-
-                <div class="container mt-3 border rounded " style="background-color: #f0f1f1 ; ">
-
-
-                    <!-- Post card start -->
+                    <!--  card 2 start -->
                     <div class="row">
                         <!-- left-post-col -->
 
@@ -757,34 +575,28 @@
 
                             <!-- answer button starts -->
                             <style>
-                                .editor-container {
-                                    border: 1px solid #ced4da;
-                                    border-radius: 0.25rem;
-                                    padding: 10px;
-                                    height: 50vh;
-                                    /* Set the height to 50% of the viewport height */
-                                }
+
                             </style>
 
 
                             <button type="button" class="btn btn-sm btn-outline-success" data-bs-toggle="modal"
-                                data-bs-target="#editorModal3"><i class="fa-solid fa-pen-to-square"></i>
+                                data-bs-target="#editorModal1"><i class="fa-solid fa-pen-to-square"></i>
                                 <span>Answer</span></button>
 
 
                             <!-- Editor Modal -->
-                            <div class="modal fade" id="editorModal3" tabindex="-1" aria-labelledby="editorModalLabel3"
+                            <div class="modal fade" id="editorModal1" tabindex="-1" aria-labelledby="editorModalLabel1"
                                 aria-hidden="true">
                                 <div class="modal-dialog modal-md modal-dialog-centered">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="editorModalLabel3">Editor</h5>
+                                            <h5 class="modal-title" id="editorModalLabel1">Editor</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
                                             <form>
-                                                <div id="editor" class="editor-container h-50 "></div>
+                                                <div id="editor1" class="editor-container h-50 "></div>
                                             </form>
                                         </div>
                                         <div class="modal-footer">
@@ -798,17 +610,18 @@
 
                             <script>
                                 ClassicEditor
-                                    .create(document.querySelector('#editor'))
+                                    .create(document.querySelector('#editor1'))
                                     .catch(error => {
                                         console.error(error);
                                     });
                             </script>
                             <!-- answe button ends -->
                         </div>
-
-
                     </div>
                     <hr>
+                    <!-- card 2 ends -->
+
+                    <!--  card 3 start -->
                     <div class="row">
                         <!-- left-post-col -->
 
@@ -816,7 +629,7 @@
 
                         <div class="vote-container ">
                             <a href="myProfile.html">
-                                <img src="shiva.png" width="45" height="45" class="rounded-circle mt-3 mb-4  ">
+                                <img src="dev.jpg" width="45" height="45" class="rounded-circle mt-3 mb-4  ">
                             </a>
 
                             <button class="vote-button" onclick="voteUp()" title="Upvote">
@@ -829,10 +642,9 @@
 
                         </div>
                         <!-- voting buttons ends -->
-
                         <!-- right post col -->
                         <div class="col-xl-8 text-sm ms-4" style="width:calc(100% - 70px); text-align: justify; ">
-                            <h5 class="mt-3 ">Shiva Shau <i class="fa-sharp fa-solid fa-circle-check"
+                            <h5 class="mt-3 ">Sachchidanand Dubey <i class="fa-sharp fa-solid fa-circle-check"
                                     style="color: #198754;"></i></h5>
                             <!-- question -->
                             <h5 class=" text-sm mt-1">What is the difference between null and undefined in Java Script?
@@ -894,52 +706,35 @@
 
 
                             <!-- share button start -->
-                            <div class="share-button sharer" style="display: block;">
-                                <button type="button" class="btn btn-sm btn-outline-success share-btn"><i
-                                        class="fa-solid fa-square-share-nodes me-1"></i>
-                                    <span>Share</span> </button>
-                                <div class="social top center networks-5 ">
-                                    <!-- Facebook Share Button -->
-                                    <a class="fbtn share facebook"
-                                        href="https://www.facebook.com/sharer/sharer.php?u=url"><i
-                                            class="fa fa-facebook"></i></a>
-                                    <!-- Google Plus Share Button -->
-                                    <a class="fbtn share gplus" href="https://plus.google.com/share?url=url"><i
-                                            class="fa fa-google-plus"></i></a>
-                                    <!-- Twitter Share Button -->
-                                    <a class="fbtn share twitter"
-                                        href="https://twitter.com/intent/tweet?text=title&amp;url=url&amp;via=creativedevs"><i
-                                            class="fa fa-twitter"></i></a>
-                                    <!-- Pinterest Share Button -->
-                                    <a class="fbtn share pinterest"
-                                        href="https://pinterest.com/pin/create/button/?url=url&amp;description=data&amp;media=image"><i
-                                            class="fa fa-pinterest"></i></a>
 
-                                    <!-- LinkedIn Share Button -->
-                                    <a class="fbtn share linkedin"
-                                        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=url&amp;title=title&amp;source=url/"><i
-                                            class="fa fa-linkedin"></i></a>
-                                    </a>
-                                </div>
-                            </div>
+                            <button type="button" class="btn btn-sm btn-outline-success" onclick="openShareMenu()"><i
+                                    class="fa-solid fa-square-share-nodes me-1"></i>
+                                <span>Share</span></button>
+
+
 
                             <!-- share button ends -->
 
-                            <!-- Each instance has a unique identifier for the modal and the editor container (e.g., editorModal2, editorModalLabel2, editor2). -->
+
 
                             <!-- answer button starts -->
-                            <button type="button" class="btn btn-sm btn-outline-success" data-bs-toggle="modal"
-                                data-bs-target="#editorModal4">
-                                <i class="fa-solid fa-pen-to-square"></i>
-                                <span>Answer</span>
-                            </button>
+                            <style>
 
-                            <div class="modal fade" id="editorModal4" tabindex="-1" aria-labelledby="editorModalLabel4"
+                            </style>
+
+
+                            <button type="button" class="btn btn-sm btn-outline-success" data-bs-toggle="modal"
+                                data-bs-target="#editorModal2"><i class="fa-solid fa-pen-to-square"></i>
+                                <span>Answer</span></button>
+
+
+                            <!-- Editor Modal -->
+                            <div class="modal fade" id="editorModal2" tabindex="-1" aria-labelledby="editorModalLabel2"
                                 aria-hidden="true">
                                 <div class="modal-dialog modal-md modal-dialog-centered">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="editorModalLabel4">Editor</h5>
+                                            <h5 class="modal-title" id="editorModalLabel2">Editor</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
@@ -959,28 +754,167 @@
 
                             <script>
                                 ClassicEditor
-                                    .create(document.querySelector('#editor1'))
-                                    .catch(error => {
-                                        console.error(error);
-                                    });
-
-                                ClassicEditor
                                     .create(document.querySelector('#editor2'))
                                     .catch(error => {
                                         console.error(error);
                                     });
                             </script>
+                            <!-- answe button ends -->
                         </div>
-
-
                     </div>
                     <hr>
+                    <!-- card 3 ends -->
+
+                    <!--  card 4 start -->
+                    <div class="row">
+                        <!-- left-post-col -->
+
+                        <!-- voating buttons starts -->
+
+                        <div class="vote-container ">
+                            <a href="myProfile.html">
+                                <img src="dev.jpg" width="45" height="45" class="rounded-circle mt-3 mb-4  ">
+                            </a>
+
+                            <button class="vote-button" onclick="voteUp()" title="Upvote">
+                                <h4 class="m-0"> <span class="fa fa-caret-up"></h4></span>
+                            </button>
+                            <span class="vote-count m-0" id="voteCount">0</span>
+                            <button class="vote-button " onclick="voteDown()" title="Downvote">
+                                <h4 class="m-0"><span class="fa fa-caret-down"></span></h4>
+                            </button>
+
+                        </div>
+                        <!-- voting buttons ends -->
+                        <!-- right post col -->
+                        <div class="col-xl-8 text-sm ms-4" style="width:calc(100% - 70px); text-align: justify; ">
+                            <h5 class="mt-3 ">Sachchidanand Dubey <i class="fa-sharp fa-solid fa-circle-check"
+                                    style="color: #198754;"></i></h5>
+                            <!-- question -->
+                            <h5 class=" text-sm mt-1">What is the difference between null and undefined in Java Script?
+                            </h5>
+                            <!-- Answer -->
+                            <p style="text-size-adjust:unset;">The difference can be explained with toilet tissue
+                                holder:
+
+                                A non-zero value is like a holder with roll of toilet tissue and there's tissue still on
+                                the tube.
+
+                                A zero value is like a holder with an empty toilet tissue tube.
+
+                                A null value is like a holder that doesn't even have a tissue tube.
+
+                                An undefined value is similar to the holder itself being missing.</p>
+                        </div>
+                        <!-- bottom buttons -->
+                        <div class=" gap-2 d-flex justify-content-end mb-2" style="background-color: #f0f1f1">
+
+
+                            <!-- comment button starts -->
+
+                            <div>
+                                <button type="button" class="btn btn-sm btn-outline-success" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdropcomment"><i class="fa-solid fa-message "></i><span
+                                        class="ms-2">comment</span>
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade " id="staticBackdropcomment" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="staticBackdropLabel">Add a comment.</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="form-group">
+                                                    <label for="FormControlTextarea2">comment</label>
+                                                    <textarea class="form-control rounded-1 border-success"
+                                                        id="FormControlTextarea2" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-success">Post</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- model ends -->
+                            </div>
+                            <!-- comment button ends -->
+
+
+                            <!-- share button start -->
+
+                            <button type="button" class="btn btn-sm btn-outline-success" onclick="openShareMenu()"><i
+                                    class="fa-solid fa-square-share-nodes me-1"></i>
+                                <span>Share</span></button>
+
+
+
+                            <!-- share button ends -->
+
+
+
+                            <!-- answer button starts -->
+                            <style>
+
+                            </style>
+
+
+                            <button type="button" class="btn btn-sm btn-outline-success" data-bs-toggle="modal"
+                                data-bs-target="#editorModal3"><i class="fa-solid fa-pen-to-square"></i>
+                                <span>Answer</span></button>
+
+
+                            <!-- Editor Modal -->
+                            <div class="modal fade" id="editorModal3" tabindex="-1" aria-labelledby="editorModalLabel3"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-md modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="editorModalLabel3">Editor</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div id="editor3" class="editor-container h-50 "></div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-success">Post</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <script>
+                                ClassicEditor
+                                    .create(document.querySelector('#editor3'))
+                                    .catch(error => {
+                                        console.error(error);
+                                    });
+                            </script>
+                            <!-- answe button ends -->
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- card 4 ends -->
 
 
 
                 </div>
-                <!-- Post card ends -->
-                <!-- Card ends -->
+                <!--  card ends -->
+
+                <!-- Card section ends -->
             </div>
             <!-- Right sidebar Starts -->
             <div class="col-3 mt-3 d-none d-lg-block " style="background-color: #f0f1f1 ">
