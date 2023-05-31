@@ -17,33 +17,22 @@ window.addEventListener('load', updateElementClass);
 
 
 
-// voting buttons 
-// Initialize an object to store vote counts for different posts
-const voteCounts = {};
 
-function voteUp(postId) {
-  if (!voteCounts.hasOwnProperty(postId)) {
-    voteCounts[postId] = 0;
-  }
-  voteCounts[postId]++;
-  updateVoteCount(postId);
+let voteCount = 0;
+
+function voteUp() {
+  voteCount++;
+  updateVoteCount();
 }
 
-function voteDown(postId) {
-  if (!voteCounts.hasOwnProperty(postId)) {
-    voteCounts[postId] = 0;
-  }
-  voteCounts[postId]--;
-  updateVoteCount(postId);
+function voteDown() {
+  voteCount--;
+  updateVoteCount();
 }
 
-function updateVoteCount(postId) {
-  const voteCountElement = document.getElementById(`voteCount_${postId}`);
-  if (voteCountElement) {
-    voteCountElement.innerText = voteCounts[postId] || 0;
-  }
+function updateVoteCount() {
+  document.getElementById("voteCount").innerText = voteCount;
 }
-
 
 
 
